@@ -1,0 +1,103 @@
+{
+  "username": "string",
+  "password": "string"
+}
+https://localhost:7002/Auth/login
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjkiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTY3NjU0NTcyMCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwMi8vIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwMi8vIn0.fWydr1ZuDtnktIiQAZO-IaItlZicdPPDN2S573d1bXQ",
+  "message": "Login Success!",
+  "roleId": 1
+}
+
+Registration:
+{
+  "username": "string",
+  "email": "string",
+  "password": "string",
+  "roleId": 0
+}
+https://localhost:7002/Auth/register
+
+City table
+{
+    "cityID": 1,
+    "cityName": "strsrgtsing",
+    "updatedBy": 1,
+    "updatedDate": "2023-02-15T05:33:58.165",
+    "location": null
+  },
+https://localhost:7002/City
+
+State:
+https://localhost:7002/State
+
+{
+    "stateID": 1,
+    "stateName": "Kerala",
+    "zipcode": 625583,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-15T06:18:59.239",
+    "location": null
+  },
+
+Location:
+https://localhost:7002/Location
+
+{
+    "locationID": 12,
+    "address": "UST",
+    "cityID": 2,
+    "stateID": 2,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-15T13:02:04.15",
+    "city": null,
+    "state": null,
+    "restaurantDetails": null
+  },
+
+MenuItemType:
+https://localhost:7002/MenuItemType
+{
+    "menuItemTypeID": 2,
+    "itemType": "lunch",
+    "updatedBy": 0,
+    "updatedDate": "2023-02-16T09:36:51.902",
+    "menuItems": null
+  }
+
+menuItems:
+https://localhost:7002/MenuItems
+{
+    "itemID": 1,
+    "itemName": "Biriyani",
+    "itemPrice": 100,
+    "menuItemTypeID": 2,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-16T09:38:20.229",
+    "menuItemType": null,
+    "menu": null
+  },
+
+Menu:
+https://localhost:7002/Menu
+{
+    "menuID": 1,
+    "itemID": 2,
+    "updatedBy": 0,
+    "updatedDate": "2023-02-16T09:42:25.567",
+    "menuItems": null,
+    "restaurantDetails": null
+  },
+
+RestauantDetails : Table Main 
+https://localhost:7002/RestaurantDetails
+{
+  "restaurant": "string",
+  "specialities": "string",
+  "additionalFeatures": "string",
+  "locationID": 0,
+  "menuID": 0,
+  "userID": 0,
+  "updatedBy": 0,
+  "updatedDate": "2023-02-16T10:59:15.715Z"
+}
