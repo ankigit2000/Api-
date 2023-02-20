@@ -1,0 +1,219 @@
+CityAPI (Table)
+https://localhost:7002/City
+
+
+POST : While giving it will display like this to enter deteials 
+{
+  "cityName": "string",
+  "updatedBy": 0,
+  "updatedDate": "2023-02-20T08:59:46.449Z"
+}
+
+GET API: while returning the data that posted 
+[
+  {
+    "cityID": 1,
+    "cityName": "Trivandrum",
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:24:28.816",
+    "location": null
+  },
+  {
+    "cityID": 2,
+    "cityName": "Kochi",
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:24:28.816",
+    "location": null
+  },
+  {
+    "cityID": 3,
+    "cityName": "string",
+    "updatedBy": 0,
+    "updatedDate": "2023-02-17T08:28:32.209",
+    "location": null
+  }
+]
+
+
+StateAPI
+https://localhost:7002/State
+ 
+POST Method
+{
+  "stateName": "string",
+  "zipcode": 0,
+  "updatedBy": 0,
+  "updatedDate": "2023-02-20T09:02:47.932Z"
+}
+
+GET method
+[
+  {
+    "stateID": 1,
+    "stateName": "Kerala",
+    "zipcode": 695523,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:25:04.494",
+    "location": null
+  },
+  {
+    "stateID": 2,
+    "stateName": "Andhra",
+    "zipcode": 524345,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:25:04.494",
+    "location": null
+  }
+]
+
+
+MenuItemsAPI
+https://localhost:7002/MenuItems
+
+Post Method
+{
+  "itemName": "string",
+  "itemPrice": 0,
+  "menuItemTypeID": 0,
+  "updatedBy": 0,
+  "updatedDate": "2023-02-20T09:05:11.234Z"
+}
+
+
+GET Method
+[
+  {
+    "itemID": 1,
+    "itemName": "Biriyani",
+    "itemPrice": 100,
+    "menuItemTypeID": 1,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:34:19.479",
+    "menuItemType": null,
+    "menu": null
+  },
+  {
+    "itemID": 2,
+    "itemName": "Dosa",
+    "itemPrice": 75,
+    "menuItemTypeID": 2,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:34:19.479",
+    "menuItemType": null,
+    "menu": null
+  }
+]
+
+MenuItemTypeAPI
+https://localhost:7002/MenuItemType
+
+PostMethod
+{
+  "itemType": "string",
+  "updatedBy": 0,
+  "updatedDate": "2023-02-20T09:07:41.532Z"
+}
+
+
+Get Method
+[
+  {
+    "menuItemTypeID": 1,
+    "itemType": "Lunch",
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:32:52.167",
+    "menuItems": null
+  },
+  {
+    "menuItemTypeID": 2,
+    "itemType": "BreakFast",
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:32:52.167",
+    "menuItems": null
+  },
+  {
+    "menuItemTypeID": 3,
+    "itemType": "Dinner",
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:32:52.167",
+    "menuItems": null
+  }
+]
+
+
+MenuAPI
+https://localhost:7002/Menu
+
+Post Method
+{
+  "itemID": 0,
+  "updatedBy": 0,
+  "updatedDate": "2023-02-20T09:09:04.445Z"
+}
+
+GET Method
+[
+  {
+    "menuID": 1,
+    "itemID": 2,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:37:58.294",
+    "menuItems": null,
+    "restaurantDetails": null
+  },
+  {
+    "menuID": 2,
+    "itemID": 1,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:37:58.294",
+    "menuItems": null,
+    "restaurantDetails": null
+  }
+]
+
+RestaurantDetails API  Main tbale
+https://localhost:7002/RestaurantDetails
+
+Post Method
+{
+  "restaurant": "Broco",
+  "specialities": "Parata and chicken curry",
+  "additionalFeatures": "Bevarages",
+  "locationID": 2,
+  "menuID": 1,
+  "userID": 1,
+  "updatedBy": 1,
+  "updatedDate": "2023-02-20T08:50:32.628Z"
+}
+
+Get Method
+[
+  {
+    "restaurantID": 1,
+    "restaurant": "Zazam",
+    "specialities": "Arebian",
+    "additionalFeatures": "Bevarges",
+    "locationID": 1,
+    "menuID": 1,
+    "userID": 1,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-17T05:39:16.529",
+    "location": null,
+    "menu": null,
+    "users": null
+  },
+  {
+    "restaurantID": 2,
+    "restaurant": "Broco",
+    "specialities": "Parata and chicken curry",
+    "additionalFeatures": "Bevarages",
+    "locationID": 2,
+    "menuID": 1,
+    "userID": 1,
+    "updatedBy": 1,
+    "updatedDate": "2023-02-20T08:50:32.628",
+    "location": null,
+    "menu": null,
+    "users": null
+  }
+]
